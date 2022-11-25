@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Satoshi Regular';
+    src: url('./assets/fonts/Satoshi-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Satoshi Medium';
+    src: url('./assets/fonts/Satoshi-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Satoshi Bold';
+    src: url('./assets/fonts/Satoshi-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Satoshi Black';
+    src: url('./assets/fonts/Satoshi-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Satoshi Light';
+    src: url('./assets/fonts/Satoshi-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    @apply font-satoshiRegular;
+}
+.input-error{
+    border: 1px solid #EF4949;
+}
+.input-success{
+    border: 1px solid #3AC430;
+}
+.primaryBtnBg{
+    border: 1px solid #575ABC;
+}
+.secondaryBtnBg{
+    border: 1px solid #E4E9F8;
+}

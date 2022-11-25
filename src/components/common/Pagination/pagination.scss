@@ -1,0 +1,100 @@
+.pagination-container {
+    display: flex;
+    list-style-type: none;
+
+    .pagination-item {
+        padding: 0 12px;
+        height: 28px;
+        text-align: center;
+        margin: auto 4px;
+        color: #fff;
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0.01071em;
+        border-radius: 23px;
+        line-height: 1.43;
+        font-size: 16px;
+        background-color: rgba(87, 90, 188, 0.50);
+        &.dots:hover {
+            background-color: transparent;
+            cursor: default;
+        }
+
+        &:hover {
+            background: #575ABC;
+            border-radius: 4px;
+            color: #151929; 
+            cursor: pointer;
+        }
+
+        &.selected {
+            background: #575ABC;
+            border-radius: 4px;
+            color: #151929;        
+        }
+
+        .arrow {
+            &::before {
+                position: relative;
+                content: "";
+                display: inline-block;
+                width: 0.4em;
+                height: 0.4em;
+                border-right: 0.12em solid #fff;
+                border-top: 0.12em solid #fff;
+            }
+
+            &.left {
+                transform: rotate(-135deg) translate(-50%);
+            }
+
+            &.right {
+                transform: rotate(45deg);
+            }
+        }
+
+        &.disabled {
+            pointer-events: none;
+
+            .arrow::before {
+                border-right: 0.12em solid rgba(213, 207, 207, 0.43);
+                border-top: 0.12em solid rgba(213, 207, 207, 0.43);
+            }
+
+            &:hover {
+                background-color: transparent;
+                cursor: default;
+            }
+        }
+    }
+    .arrow-icon{
+       &:hover{
+        height: 28px;
+        border-radius: 14px;
+        background: #575ABC;
+        color: #151929;   
+       }
+    }
+}
+.pagination-bar {
+    justify-content: center;
+    margin: 20px 0;
+}
+
+
+.pagination-goto{
+  .pagination-input-sec{
+        &::after {
+            content: '';
+            background-image: url('../../../assets/icons/Plus.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            right: 10px;
+        }
+    }
+}
